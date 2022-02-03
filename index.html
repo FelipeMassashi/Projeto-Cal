@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css" type="text/css">
+        <script src="scripts/script.js"></script>
+        <title>Calculadora</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Calculadora</h1>
+            </header>
+
+            <div id="flex-container">
+                <input type="text" id="n1" placeholder="Digite um número">
+                <select id="selector">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/</option>
+                </select>
+                <input type="text" id="n2" placeholder="Digite outro número">
+
+                <div id="flex-container2">
+                    <button onclick="cal(n1, n2)" id="calcular">Calcular</button>
+                    <input type="reset" onclick="reset()" value="Limpar" id="calcular">
+                </div>
+               
+            </div>
+
+            <div>
+                <h3 id="resultado" style="font-family: sans-serif;">Nenhum resultado encontrado</h3>
+            </div>
+
+            <footer>
+                <p>Feito por: Felipe Massashi || Todos os direitos reservados</p>
+            </footer>
+        </div>
+    </body>
+</html>
